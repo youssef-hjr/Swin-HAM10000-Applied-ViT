@@ -1,0 +1,310 @@
+{
+ "best": "Swin-T (ImageNet-22k)",
+ "results": [
+  {
+   "model": "Swin-T (ImageNet-22k)",
+   "method": "Linear probe",
+   "acc": 0.766,
+   "bacc": 0.6733614924003384,
+   "macro_f1": 0.6397138081628742,
+   "mal_recall": 0.738831615120275,
+   "auc_mal": 0.9037829110991731,
+   "ece": 0.11424636924266815,
+   "bacc_lo": 0.6031536697572393,
+   "bacc_hi": 0.7357639142633629
+  },
+  {
+   "model": "Swin-T (ImageNet-22k)",
+   "method": "Partial fine-tune",
+   "acc": 0.6873333333333334,
+   "bacc": 0.6845460673703277,
+   "macro_f1": 0.5351320154501881,
+   "mal_recall": 0.7835051546391752,
+   "auc_mal": 0.909660933605064,
+   "ece": 0.05316614725192388,
+   "bacc_lo": 0.611222302326341,
+   "bacc_hi": 0.7474905851634532
+  },
+  {
+   "model": "Swin-T (ImageNet-1k)",
+   "method": "Linear probe",
+   "acc": 0.7453333333333333,
+   "bacc": 0.6465343347098645,
+   "macro_f1": 0.6059605694212719,
+   "mal_recall": 0.6666666666666666,
+   "auc_mal": 0.8791594541511402,
+   "ece": 0.11728206761678059,
+   "bacc_lo": 0.5794746261752445,
+   "bacc_hi": 0.7082850647386781
+  },
+  {
+   "model": "Swin-T (ImageNet-1k)",
+   "method": "Partial fine-tune",
+   "acc": 0.6833333333333333,
+   "bacc": 0.6748601392857895,
+   "macro_f1": 0.5117118907858987,
+   "mal_recall": 0.718213058419244,
+   "auc_mal": 0.8864927704302497,
+   "ece": 0.07172618263959883,
+   "bacc_lo": 0.6157251462214786,
+   "bacc_hi": 0.7225036558429015
+  }
+ ],
+ "per_class_recall": {
+  "Swin-T (ImageNet-22k)": {
+   "Melanoma": 0.6227544910179641,
+   "Naevus": 0.7206759443339961,
+   "Basal cell carc.": 0.631578947368421,
+   "Actinic keratosis": 0.7083333333333334,
+   "Benign keratosis": 0.5454545454545454,
+   "Dermatofibroma": 0.7058823529411765,
+   "Vascular": 0.8571428571428571
+  },
+  "Swin-T (ImageNet-1k)": {
+   "Melanoma": 0.5269461077844312,
+   "Naevus": 0.7415506958250497,
+   "Basal cell carc.": 0.6052631578947368,
+   "Actinic keratosis": 0.625,
+   "Benign keratosis": 0.49696969696969695,
+   "Dermatofibroma": 0.8235294117647058,
+   "Vascular": 0.9047619047619048
+  }
+ },
+ "report": {
+  "Melanoma": {
+   "precision": 0.35494880546075086,
+   "recall": 0.6227544910179641,
+   "f1-score": 0.45217391304347826,
+   "support": 167.0
+  },
+  "Naevus": {
+   "precision": 0.9564643799472295,
+   "recall": 0.7206759443339961,
+   "f1-score": 0.8219954648526077,
+   "support": 1006.0
+  },
+  "Basal cell carc.": {
+   "precision": 0.47058823529411764,
+   "recall": 0.631578947368421,
+   "f1-score": 0.5393258426966292,
+   "support": 76.0
+  },
+  "Actinic keratosis": {
+   "precision": 0.3953488372093023,
+   "recall": 0.7083333333333334,
+   "f1-score": 0.5074626865671642,
+   "support": 48.0
+  },
+  "Benign keratosis": {
+   "precision": 0.5921052631578947,
+   "recall": 0.5454545454545454,
+   "f1-score": 0.5678233438485805,
+   "support": 165.0
+  },
+  "Dermatofibroma": {
+   "precision": 0.1791044776119403,
+   "recall": 0.7058823529411765,
+   "f1-score": 0.2857142857142857,
+   "support": 17.0
+  },
+  "Vascular": {
+   "precision": 0.42857142857142855,
+   "recall": 0.8571428571428571,
+   "f1-score": 0.5714285714285714,
+   "support": 21.0
+  },
+  "accuracy": 0.6873333333333334,
+  "macro avg": {
+   "precision": 0.48244734675038053,
+   "recall": 0.6845460673703277,
+   "f1-score": 0.5351320154501881,
+   "support": 1500.0
+  },
+  "weighted avg": {
+   "precision": 0.7906421408984756,
+   "recall": 0.6873333333333334,
+   "f1-score": 0.7188902991415405,
+   "support": 1500.0
+  }
+ },
+ "tone": [
+  {
+   "tone": "Darker (ITA<=41)",
+   "n": 142,
+   "malignant": 7,
+   "accuracy": 0.8309859154929577,
+   "balanced_acc": 0.6598958333333333,
+   "malignant_recall": 0.5714285714285714,
+   "auc_mal": 0.946031746031746
+  },
+  {
+   "tone": "Light (41-55)",
+   "n": 163,
+   "malignant": 15,
+   "accuracy": 0.8282208588957055,
+   "balanced_acc": 0.7735126288958405,
+   "malignant_recall": 1.0,
+   "auc_mal": 0.9918918918918919
+  },
+  {
+   "tone": "Very light (>55)",
+   "n": 1195,
+   "malignant": 269,
+   "accuracy": 0.6510460251046025,
+   "balanced_acc": 0.6643996114495335,
+   "malignant_recall": 0.7769516728624535,
+   "auc_mal": 0.8898407829975832
+  }
+ ],
+ "confirm": [
+  {
+   "diagnosis_confirm_type": "confocal microscopy with consensus dermoscopy",
+   "n": 14,
+   "malignant": 0,
+   "accuracy": 0.9285714285714286,
+   "balanced_acc": 0.9285714285714286,
+   "malignant_recall": NaN,
+   "auc_mal": NaN
+  },
+  {
+   "diagnosis_confirm_type": "histopathology",
+   "n": 799,
+   "malignant": 291,
+   "accuracy": 0.5043804755944932,
+   "balanced_acc": 0.5741037002552982,
+   "malignant_recall": 0.7835051546391752,
+   "auc_mal": 0.8109830343372026
+  },
+  {
+   "diagnosis_confirm_type": "serial imaging showing no change",
+   "n": 564,
+   "malignant": 0,
+   "accuracy": 0.9539007092198581,
+   "balanced_acc": 0.9539007092198581,
+   "malignant_recall": NaN,
+   "auc_mal": NaN
+  },
+  {
+   "diagnosis_confirm_type": "single image expert consensus",
+   "n": 123,
+   "malignant": 0,
+   "accuracy": 0.6260162601626016,
+   "balanced_acc": 0.7632039013617962,
+   "malignant_recall": NaN,
+   "auc_mal": NaN
+  }
+ ],
+ "history": {
+  "Swin-T (ImageNet-22k)": [
+   {
+    "epoch": 1,
+    "train_loss": 1.671221699565118,
+    "val_loss": 1.273003339767456,
+    "val_bacc": 0.5104855183229666
+   },
+   {
+    "epoch": 2,
+    "train_loss": 1.0715412376102005,
+    "val_loss": 1.0671240091323853,
+    "val_bacc": 0.6349942399922561
+   },
+   {
+    "epoch": 3,
+    "train_loss": 0.9019586670424202,
+    "val_loss": 0.9967247247695923,
+    "val_bacc": 0.6367542475179242
+   },
+   {
+    "epoch": 4,
+    "train_loss": 0.8185642858190529,
+    "val_loss": 0.9560263156890869,
+    "val_bacc": 0.6660748722057674
+   },
+   {
+    "epoch": 5,
+    "train_loss": 0.7647743569300672,
+    "val_loss": 0.933249831199646,
+    "val_bacc": 0.6665754232997726
+   },
+   {
+    "epoch": 6,
+    "train_loss": 0.734559565107056,
+    "val_loss": 0.9084327816963196,
+    "val_bacc": 0.6811669447312333
+   },
+   {
+    "epoch": 7,
+    "train_loss": 0.7208330410510748,
+    "val_loss": 0.9219345450401306,
+    "val_bacc": 0.6757715288377499
+   },
+   {
+    "epoch": 8,
+    "train_loss": 0.7104274448971194,
+    "val_loss": 0.9172453284263611,
+    "val_bacc": 0.6757184910116238
+   }
+  ],
+  "Swin-T (ImageNet-1k)": [
+   {
+    "epoch": 1,
+    "train_loss": 1.7129635300367794,
+    "val_loss": 1.3911314010620117,
+    "val_bacc": 0.5246574323313449
+   },
+   {
+    "epoch": 2,
+    "train_loss": 1.2233638597571332,
+    "val_loss": 1.1714775562286377,
+    "val_bacc": 0.5791686115521877
+   },
+   {
+    "epoch": 3,
+    "train_loss": 1.040498490250289,
+    "val_loss": 1.116744041442871,
+    "val_bacc": 0.6123237622920553
+   },
+   {
+    "epoch": 4,
+    "train_loss": 0.9708065727142802,
+    "val_loss": 1.0718414783477783,
+    "val_bacc": 0.6050931471348479
+   },
+   {
+    "epoch": 5,
+    "train_loss": 0.9049778519064209,
+    "val_loss": 1.0519020557403564,
+    "val_bacc": 0.6090777043813608
+   },
+   {
+    "epoch": 6,
+    "train_loss": 0.8779921824984778,
+    "val_loss": 1.0456074476242065,
+    "val_bacc": 0.6028264791267136
+   },
+   {
+    "epoch": 7,
+    "train_loss": 0.8529497749875123,
+    "val_loss": 1.044079303741455,
+    "val_bacc": 0.6081496508680904
+   },
+   {
+    "epoch": 8,
+    "train_loss": 0.8497975670263246,
+    "val_loss": 1.0437473058700562,
+    "val_bacc": 0.6135139119945976
+   }
+  ]
+ },
+ "split": {
+  "train": 7015,
+  "val": 1500,
+  "test": 1500
+ },
+ "tone_counts": {
+  "Very light (>55)": 8129,
+  "Light (41-55)": 991,
+  "Darker (ITA<=41)": 895
+ },
+ "n_lesions": 7470
+}
